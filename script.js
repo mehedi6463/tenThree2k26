@@ -1,7 +1,9 @@
-function showName(name, color) {
-	const heading = document.getElementById("name");
-	heading.textContent = name;
-	heading.style.color = color;
+function showTitle(title, color) {
+	const titleElement = document.getElementById('title');
+	titleElement.textContent = title;
+	titleElement.style.color = color;
+
+	return titleElement;
 }
 
-showName("Mehedi", "blue");
+showTitle('Welcome to My Project', 'red');
