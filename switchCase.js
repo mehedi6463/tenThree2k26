@@ -83,7 +83,7 @@ submitBtn.addEventListener("click", function () {
     result.textContent = `Your Marks: ${marks} — ${grade}`;
 });*/
 
-//Fully use input and button (DOM)
+/* //Fully use input and button (DOM)
 let button = document.getElementById("submitData");
 let input = document.getElementById("inputData");
 let result2 = document.getElementById("markData");
@@ -121,4 +121,5 @@ button.addEventListener("click", function () {
     result.textContent = `Your marks: ${marks}`;
     result2.textContent = `Grade: ${grade}`;
 });
+*/
 
