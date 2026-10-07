@@ -51,12 +51,34 @@ console.log(`even numbers: ${evenNumbers}`);
 */
 
 //includes method: check value is present in array or not
-let students = ["Rahim", "Karim", "Hasan", "Sakib"];
+/* let students = ["Rahim", "Karim", "Hasan", "Sakib"];
 
-let search = "Hasan";
+ let search = "Hasan";
 
-if (students.includes(search)) {
-    document.write(`Student found! <br/>${search} is present in the array.`);
-} else {
-    document.write("Student not found!");
+ if (students.includes(search)) {
+     document.write(`Student found! <br/>${search} is present in the array.`);
+ } else {
+     document.write("Student not found!");
+ }
+*/
+
+//age calculator using Date() object
+const birthDate = new Date("2000-06-20");
+const today = new Date("2026-10-30");
+
+let years = today.getFullYear() - birthDate.getFullYear();
+let months = today.getMonth() - birthDate.getMonth();
+let days = today.getDate() - birthDate.getDate();
+
+if (days < 0) {
+    const previousMonthDays = new Date(
+        today.getFullYear(),
+        today.getMonth(),
+        0
+    ).getDate();
+
+    days = previousMonthDays + days;
+    months--;
 }
+
+console.log(`${years} Years, ${months} Months, ${days} Days`);
