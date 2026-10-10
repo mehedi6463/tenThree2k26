@@ -1,5 +1,5 @@
 
-//age calculator
+ //age calculator
 const birthDateInput = document.getElementById('birthDate');
 const presentDateInput = document.getElementById('presentDate');
 const calculateBtn = document.getElementById('calculateBtn');
@@ -19,5 +19,5 @@ calculateBtn.addEventListener('click', () => {
     }
 
     // resultElement.textContent = `Age: ${years} years, ${month} months, ${day} days`;
-    window.alert(`Age: ${years} years, ${month} months, ${day} days`);
+    alert(`Age: ${years} years, ${month} months, ${day} days`);
 });
