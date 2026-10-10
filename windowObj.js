@@ -126,3 +126,12 @@ let myWindow2 = window.open(
 
 myWindow.moveTo(100, 100);
 */
+
+//simple delete confirmation 
+const answer = confirm("Do you want to delete this item?");
+
+if (answer) {
+    document.getElementById("deleteBtn").innerHTML = "Item deleted";
+} else {
+  document.getElementById("deleteBtn").innerHTML = "Item not deleted";
+}
