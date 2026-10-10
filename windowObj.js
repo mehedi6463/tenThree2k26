@@ -66,7 +66,7 @@ else {
     }
 };*/
 
-//more robust validation with loops
+/*/more robust validation with loops
 alert("Welcome to the website!");
 
 let myName;
@@ -99,7 +99,6 @@ while (true) {
         break;
     }
 }
-
 // 3. Confirmation
 let isCorrect = confirm(
     `Hello ${myName}, you are ${myAge} years old. Is this correct?`
@@ -111,4 +110,19 @@ if (isCorrect) {
     console.log("Age:", myAge);
 }else {
     alert("Please reload and enter your information again.");
-}
+}*/
+
+/* //not working code // window methods
+let myWindow = window.open("https://google.com");
+// let result =myWindow.focus();
+let result =myWindow.blur();
+console.log(result);
+
+let myWindow2 = window.open(
+    "https://example.com",
+    "",
+    "width=500,height=400"
+);
+
+myWindow.moveTo(100, 100);
+*/
