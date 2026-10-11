@@ -127,11 +127,30 @@ let myWindow2 = window.open(
 myWindow.moveTo(100, 100);
 */
 
-//simple delete confirmation 
+/* //simple delete confirmation 
 const answer = confirm("Do you want to delete this item?");
 
 if (answer) {
     document.getElementById("deleteBtn").innerHTML = "Item deleted";
 } else {
   document.getElementById("deleteBtn").innerHTML = "Item not deleted";
-}
+};*/
+/*let openWin =window.open("https://www.google.com", "_blank");
+console.log(openWin);*/
+
+/* //open and close window
+let myWindow = null;
+
+document.getElementById("openBtn").addEventListener("click", () => {
+  myWindow = window.open(
+    "https://example.com",
+    "_blank",
+    "width=600,height=400"
+  );
+});
+
+document.getElementById("closeBtn").addEventListener("click", () => {
+  if (myWindow && !myWindow.closed) {
+    myWindow.close();
+  }
+});*/
