@@ -154,3 +154,55 @@ document.getElementById("closeBtn").addEventListener("click", () => {
     myWindow.close();
   }
 });*/
+
+/*//focus and blur window
+const popup = window.open(
+  "https://example.com",
+  "myPopup",
+  "width=500,height=400"
+);
+
+if (popup) {
+  popup.focus();
+}
+//moveto
+const popup1 = window.open(
+  "https://example.com",
+  "myPopup",
+  "width=400,height=300"
+);
+
+if (popup1) {
+  popup1.moveTo(100, 100);
+}
+//moveby
+const popup2 = window.open(
+  "https://example.com",
+  "myPopup",
+  "width=400,height=300"
+);
+
+if (popup2) {
+  popup2.moveBy(50, 50);
+}
+//resizeto
+const popup3 = window.open(
+  "https://example.com",
+  "myPopup",
+  "width=400,height=300"
+);
+
+if (popup3) {
+  popup3.resizeTo(600, 500);
+}
+
+//resizeby
+const popup4 = window.open(
+  "https://example.com",
+  "myPopup",
+  "width=400,height=300"
+);
+
+if (popup4) {
+  popup4.resizeBy(100, 100);
+}*/
