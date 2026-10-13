@@ -217,8 +217,58 @@ if (popup4) {
 
 // clearTimeout(result);
 
-const result = setTimeout(() => {
-  console.log("Hi");
-}, 1000);
+// const result = setTimeout(() => {
+//   console.log("Hi");
+// }, 1000);
 
-console.log(result);
+// console.log(result);
+
+//setInterval with optional parameters
+// let count = 0;
+
+// const intervalID = setInterval(() => {
+//   count++;
+//   console.log(count);
+
+//   if (count === 10) {
+//     clearInterval(intervalID);
+//   }
+// }, 1000);
+
+//addeventlistener for button click to start the interval
+// let result = document.getElementById("btnclick");
+// document.getElementById("btnclick").addEventListener("click", () => {
+//   result.innerHTML = "Button clicked!";
+// });
+
+// removeEventListener
+let helloBtn = document.getElementById("helloBtn");
+let removeBtn = document.getElementById("removeBtn");
+
+function sayHello() {
+  helloBtn.innerHTML =`Hello!`;
+}
+helloBtn.addEventListener("click", sayHello);
+
+removeBtn.addEventListener("click", () => {
+  helloBtn.removeEventListener("click", sayHello);
+  helloBtn.disabled = true;
+  helloBtn.innerHTML = "!disabled";
+  
+
+  removeBtn.style.display = "none";
+});
+
+// Example 1: capture: true দিয়ে listener remove
+// function sayHello() {
+//   console.log("Hello!");
+// }
+
+// btn.addEventListener("click", sayHello, {
+//   capture: true
+// });
+
+// // Listener remove
+// btn.removeEventListener("click", sayHello, {
+//   capture: true
+// });
