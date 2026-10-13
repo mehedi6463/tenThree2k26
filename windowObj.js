@@ -138,22 +138,22 @@ if (answer) {
 /*let openWin =window.open("https://www.google.com", "_blank");
 console.log(openWin);*/
 
-/* //open and close window
-let myWindow = null;
+ //open and close window
+// let myWindow = null;
 
-document.getElementById("openBtn").addEventListener("click", () => {
-  myWindow = window.open(
-    "https://example.com",
-    "_blank",
-    "width=600,height=400"
-  );
-});
+// document.getElementById("openBtn").addEventListener("click", () => {
+//   myWindow = window.open(
+//     "https://example.com",
+//     "_blank",
+//     "width=300,height=200"
+//   );
+// });
 
-document.getElementById("closeBtn").addEventListener("click", () => {
-  if (myWindow && !myWindow.closed) {
-    myWindow.close();
-  }
-});*/
+// document.getElementById("closeBtn").addEventListener("click", () => {
+//   if (myWindow && !myWindow.closed) {
+//     myWindow.close();
+//   }
+// });
 
 /*//focus and blur window
 const popup = window.open(
@@ -206,3 +206,19 @@ const popup4 = window.open(
 if (popup4) {
   popup4.resizeBy(100, 100);
 }*/
+
+//setTimeout with optional parameters
+// function greet(name) {
+//   window.alert("Hello " + name);
+// }
+
+// let result =setTimeout(greet, 5000, "Rahim");
+// console.log(result); // Outputs the timeout ID
+
+// clearTimeout(result);
+
+const result = setTimeout(() => {
+  console.log("Hi");
+}, 1000);
+
+console.log(result);
