@@ -29,3 +29,16 @@ navigator.geolocation.getCurrentPosition(
   }
 );
 */
+
+//clipboard with navigator
+ async function copyText() {
+    try {
+      await navigator.clipboard.writeText("Hello JavaScript");
+      //console.log("Text copied!");
+      window.alert("Text copied!");
+    } catch (error) {
+      console.log("Copy failed:", error.message);
+    }
+  }
+
+  document.querySelector("#copyBtn").addEventListener("click", copyText);
