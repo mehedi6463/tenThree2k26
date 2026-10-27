@@ -31,6 +31,7 @@ navigator.geolocation.getCurrentPosition(
 */
 
 //clipboard with navigator
+/*
  async function copyText() {
     try {
       await navigator.clipboard.writeText("Hello JavaScript");
@@ -42,3 +43,4 @@ navigator.geolocation.getCurrentPosition(
   }
 
   document.querySelector("#copyBtn").addEventListener("click", copyText);
+*/
