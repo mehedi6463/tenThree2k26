@@ -37,16 +37,39 @@ function domDemo2(){
     alert('total p tag is ' + itemcount);
 }*/
 
-// DOM Working With Form Input
-function formInput(a, b){
+// DOM Working With Form Input with css manupulate
+/*function formInput(a, b){
     let st = document.getElementById('num1').value;
     let nd = document.getElementById('num2').value;
+    let ptag =document.querySelector('.ptag')
     let z;
-    if (z == NaN) {
+    if (z === 0) {
         
         document.getElementsByTagName('p')[1].innerHTML= "enter number";
     }else{
         let z = parseFloat(st) + parseFloat(nd);
-        document.getElementsByTagName('p')[0].innerHTML= "result is " + z;
+        let htmlTag = document.getElementsByTagName('p')[0];
+        htmlTag.innerHTML= "result is " + z;
+        htmlTag.style.color = "red";
+        htmlTag.style.fontSize = "24px";
     }
+}*/
+
+//dom with css manupulate
+function styleAdd(){
+//with using varriable
+let stlAdd = document.querySelector('#style');
+stlAdd.classList.add('text-primary');
 }
+
+function styleRemove (){
+    //without using varriable
+    document.querySelector('#style').classList.remove('text-primary'); 
+
+}
+
+//button toggle
+document.querySelector('#btnToggle');
+btnToggle.addEventListener("click", function () {
+  title.classList.toggle("style");
+});
