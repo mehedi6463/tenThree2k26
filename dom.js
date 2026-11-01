@@ -55,6 +55,7 @@ function domDemo2(){
     }
 }*/
 
+/*
 //dom with css manupulate
 function styleAdd(){
 //with using varriable
@@ -73,3 +74,18 @@ document.querySelector('#btnToggle');
 btnToggle.addEventListener("click", function () {
   title.classList.toggle("style");
 });
+*/
+
+//Create Element Append Element
+function addItem() {
+    // catch value
+    let itemValue = document.getElementById("itemInput").value;
+
+    //create element AND append element VALUE
+    let listItems = document.createElement("li");
+    listItems.innerHTML = itemValue;
+
+    let myItems = document.getElementById("myItems");
+    myItems.appendChild(listItems);
+
+}
