@@ -76,6 +76,7 @@ btnToggle.addEventListener("click", function () {
 });
 */
 
+/*
 //Create Element Append Element
 function addItem() {
     // catch value
@@ -89,3 +90,13 @@ function addItem() {
     myItems.appendChild(listItems);
 
 }
+*/
+
+//work with attribute change
+let changeBtn = document.getElementById("changeBtn");
+changeBtn.addEventListener("click", function () {
+  let myImage = document.getElementById("myImage");
+
+  myImage.width = "400";
+  myImage.height = "400";
+});
