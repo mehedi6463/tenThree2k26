@@ -92,6 +92,7 @@ function addItem() {
 }
 */
 
+/*
 //work with attribute change
 let changeBtn = document.getElementById("changeBtn");
 changeBtn.addEventListener("click", function () {
@@ -100,3 +101,4 @@ changeBtn.addEventListener("click", function () {
   myImage.width = "400";
   myImage.height = "400";
 });
+*/
