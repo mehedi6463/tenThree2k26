@@ -21,6 +21,7 @@ function getData(){
 }
 */
 //Ajax post request
+/*
 function postData(){
     let url ="https://crud.teamrabbil.com/api/v1/CreateProduct";
     let bodyData = {
@@ -42,8 +43,10 @@ function postData(){
     fetch(url, postMethod)
     .then (response => response.json())
     .then (data => {
-        document.getElementById("data").innerHTML = `Data... ${data.data.status}`;
+        document.getElementById("data").innerHTML = `Data... ${data.data}`;
     })
     .catch (error => { 
         document.getElementById("data").innerHTML = `Error... ${error}`; });
 }
+
+*/
