@@ -107,3 +107,37 @@ let product1 = new Product();
 product1.productName = "Laptop";
 console.log(product1.getName);
 */
+
+/*//sttic method in class (when use static method then we can use this property, creating any object instance for class is not necessary) its use for utility function like validation, calculation etc.
+class MathUtils {
+    static add(a, b) {
+        return a + b;
+    }
+    divide(a, b) {
+        return a / b;
+    }
+}
+
+console.log(MathUtils.add(5, 10));
+*/
+
+//inheritance in class
+class Parent {
+    asset = ['house', 'car', 'land', 'Factory'];
+    name = "Hasan";
+
+    num1 = 100;
+    num2 = 2;
+
+    division() {
+        return this.num1 / this.num2;
+    }
+}
+
+class Child extends Parent {} //child class can access all the properties and methods of parent class
+
+let child1 = new Child();
+// child1.division();
+// console.log(child1.asset);
+// console.log(child1.name);
+console.log(child1.division());
