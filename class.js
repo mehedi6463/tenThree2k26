@@ -62,7 +62,7 @@ const student1 = new Student("Rahim", 22, "CSE");
 document.getElementById("desc").innerHTML = student1.showInfo();
 */
 
- //class also can calculate data initially decleard and then can be changed by constructor
+/* //class also can calculate data initially decleard and then can be changed by constructor
 class Calculator {
     num1 = 20;
     num2 = 5;
@@ -90,3 +90,20 @@ console.log("Addition: " + calc.add());
 console.log("Subtraction: " + calc.subtract());
 console.log("Multiplication: " + calc.multiply());
 console.log("Division: " + Math.floor(calc.divide()));
+*/
+
+/*
+//getters and setters in class
+class Product {
+    set productName(name) {
+        this.name = name;
+    }
+    get getName() {
+        return this.name;
+    }
+}
+
+let product1 = new Product();
+product1.productName = "Laptop";
+console.log(product1.getName);
+*/
