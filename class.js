@@ -121,6 +121,8 @@ class MathUtils {
 console.log(MathUtils.add(5, 10));
 */
 
+
+/*
 //inheritance in class
 class Parent {
     asset = ['house', 'car', 'land', 'Factory'];
@@ -138,6 +140,57 @@ class Child extends Parent {} //child class can access all the properties and me
 
 let child1 = new Child();
 // child1.division();
-// console.log(child1.asset);
+console.log(child1.asset[2]);
 // console.log(child1.name);
 console.log(child1.division());
+*/
+
+/*
+// Inheritance Constructor with satic properties
+class Parson {
+    constructor(fName, lName, age) {
+        this.fName = fName;
+        this.lName = lName;
+        this.age = age;
+    }
+
+    static getFullname() {
+        return `${this.fName} ${this.lName}`;
+    }
+}
+
+// let person1 = new Parson("John", "Doe", 30);
+// console.log(Parson.getFullname());
+
+class Student extends Parson {   
+    constructor(m, s, g, e){
+        super()
+        this.classRoll = e;
+        console.log(`My name is ${m} ${s} and I am ${g} years old and my class roll is ${e}`);
+    }
+}
+let student1 = new Student("Rahim", "Uddin", 22, 1);
+
+class Teacher extends Parson {   
+    constructor(m, s, g, e){
+        super()
+        console.log(`My name is ${m} ${s} and I am ${g} years old and I am ${e} Teacher`);
+    }
+}
+let teacher1 = new Teacher("Abul", "Sir", 52, "Math");
+*/
+
+/*
+//Inheritance Static Properties
+class Person {
+    static fName = "John";
+    static lName = "Doe";
+    static age = 30;
+
+    static getFullname() {
+        return `${this.fName} ${this.lName} and age is ${this.age}`;
+    }
+}
+let person1 = new Person();
+console.log(Person.getFullname());
+*/
