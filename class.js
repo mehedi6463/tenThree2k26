@@ -200,9 +200,21 @@ class Father{
     addnumber(){
         let a = 10;
         let b = 20;
-        console.log (a + b);
+        console.log ("Ans: Comes from Father = " + (a + b));
     }
 }
 
 let father1 = new Father();
 father1.addnumber();
+
+class Son extends Father{
+    addnumber(){
+        let a = 10;
+        let b = 20;
+        let c = 5;
+        console.log ("Ans: Comes from Son = " + ((a + b) / c));
+    }
+}
+
+let son1 = new Son();
+son1.addnumber();
