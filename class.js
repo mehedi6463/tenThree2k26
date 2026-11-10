@@ -194,3 +194,15 @@ class Person {
 let person1 = new Person();
 console.log(Person.getFullname());
 */
+
+//inheritance Overriding
+class Father{
+    addnumber(){
+        let a = 10;
+        let b = 20;
+        console.log (a + b);
+    }
+}
+
+let father1 = new Father();
+father1.addnumber();
