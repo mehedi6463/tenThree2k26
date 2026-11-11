@@ -194,8 +194,8 @@ class Person {
 let person1 = new Person();
 console.log(Person.getFullname());
 */
-
-//inheritance Overriding
+/*
+//inheritance Overriding parent & child class both have same method name but different implementation
 class Father{
     addnumber(){
         let a = 10;
@@ -218,3 +218,88 @@ class Son extends Father{
 
 let son1 = new Son();
 son1.addnumber();
+*/
+/*
+//Encapsulation Using Closures
+function createCounter() {
+    let count = 0; // private variable
+    return {
+        increment: function () {
+            count++;
+        },
+        decrement: function () {
+            count--;
+        },
+        getCount: function () {
+            return count;
+        }
+    }
+}
+
+let counter = createCounter();
+counter.increment();
+counter.increment();
+counter.increment();
+counter.decrement();
+counter.decrement();
+console.log("Count: " + counter.getCount()); // 2
+*/
+/*
+//Encapsulation Using Constructor Functions
+function createCounter() {
+    let count = 0; // private variable
+
+    return {
+        increment: () => {
+            count++;
+        },
+        decrement: () => {
+            count--;
+        },
+        getCount: () => {
+            return "Count: " +count;
+        }
+    };
+}
+
+let counter = new createCounter();
+counter.increment();
+counter.increment();
+counter.increment();
+counter.increment();
+counter.decrement();
+counter.decrement();
+
+console.log(counter.getCount()); // 2
+*/
+/*
+//Encapsulation Using ES6 Classes
+class BankAccount {
+    #balance = 0; // private field
+    
+    deposit() {
+        this.#balance += 1000;
+    }
+    withdraw() {
+        if (this.#balance >= 500) {
+            this.#balance -= 500;
+        } else {
+            console.log("Insufficient balance");
+        }   
+    }
+    mainBalance() {
+        return this.#balance;
+    }
+}
+
+let BankAccount1 = new BankAccount();
+BankAccount1.deposit();
+BankAccount1.deposit();
+BankAccount1.withdraw();
+BankAccount1.withdraw();
+BankAccount1.deposit();
+BankAccount1.deposit();
+console.log("Current Balance: " + BankAccount1.mainBalance());
+*/
+
+
