@@ -301,5 +301,38 @@ BankAccount1.deposit();
 BankAccount1.deposit();
 console.log("Current Balance: " + BankAccount1.mainBalance());
 */
+class Employee {
 
+    constructor(name, salary) {
+        this.name = name;
+        this.salary = salary;
+    }
 
+    showInfo() {
+        console.log(`Name: ${this.name}`);
+        console.log(`Salary: ${this.salary}`);
+    }
+
+}
+
+class Manager extends Employee {
+
+    constructor(name, salary, department) {
+        super(name, salary);
+        this.department = department;
+    }
+
+    showInfo() {
+
+        super.showInfo();
+
+        console.log(`Department: ${this.department}`);
+
+    }
+
+}
+const manager1 = new Manager("Rahim", 50000, "IT");
+const employee1 = new Employee("Karim", 40000);
+
+manager1.showInfo();
+employee1.showInfo();
